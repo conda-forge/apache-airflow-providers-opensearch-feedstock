@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-opensearch" %}
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_opensearch-{{ version }}.tar.gz
-  sha256: e970b03c95453c0ab8036cec7778c823500d01b3e41fc495df3c005c9bb60f59
+  sha256: 1f8b980eb99a9bb0e6554abdc0e58073ecb7447e34508699176f7800410dfa26
 
 build:
   noarch: python
