@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-opensearch" %}
-{% set version = "1.7.5" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_opensearch-{{ version }}.tar.gz
-  sha256: 68b596df062d069a05172b37e6ec14e07f3a8203a548730d3496e8cd85898bf2
+  sha256: f3c7e665be5dccfd2c8c1d713c64e58bdd51ee5d115de513e8ac373d131aced5
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=2.10.0
+    - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - opensearch-py >=2.2.0
 
