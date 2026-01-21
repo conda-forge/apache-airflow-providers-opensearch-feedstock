@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-opensearch
-  version: 1.8.3
+  version: "1.8.3"
 
 package:
   name: ${{ name|lower }}
