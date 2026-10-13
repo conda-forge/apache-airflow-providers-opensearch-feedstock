@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-opensearch
-  version: "1.13.0"
+  version: "1.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_opensearch-${{ version }}.tar.gz
-  sha256: e2d5a3017badf61e62c8f05ac3d480a83d619b2d2002ad6aa785f7cbd3663d7f
+  sha256: 24b46ed5fb1690423d723631dc5cebdc1af898245b19322f5e4ca6640555c1bb
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.0.2
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=3.0.0
