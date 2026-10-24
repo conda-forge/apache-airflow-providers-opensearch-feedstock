@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-opensearch
-  version: "1.14.0"
+  version: "1.15.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_opensearch-${{ version }}.tar.gz
-  sha256: 24b46ed5fb1690423d723631dc5cebdc1af898245b19322f5e4ca6640555c1bb
+  sha256: 29b92f70dd235e60b7c6c57d2bc08395a0fff9d9beaff774124771ba972416e1
 
 build:
   noarch: python
